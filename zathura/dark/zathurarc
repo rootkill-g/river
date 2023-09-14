@@ -1,0 +1,11 @@
+set font "Cousine Nerd Font 12"
+set recolor
+set recolor-lightcolor "#45475A"
+set recolor-darkcolor "#DFBF83"
+set default-bg "#000000"
+
+set inputbar-bg "#000000"
+set inputbar-fg "#CDD6F4"
+
+set page-padding 3
+set scroll-step 80

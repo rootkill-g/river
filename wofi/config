@@ -1,0 +1,20 @@
+#########################
+#                 __ _  #
+# __      _____  / _(_) #
+# \ \ /\ / / _ \| |_| | #
+#  \ V  V / (_) |  _| | #
+#   \_/\_/ \___/|_| |_| #
+#########################
+
+#
+# Author : rootkill <rootkill.dedsec@gmail.com>
+# Github : rootkill-g
+#
+
+width=500
+insensitive=true
+mode=drun,run
+columns=1
+padding=10
+# lines=10
+term=foot
