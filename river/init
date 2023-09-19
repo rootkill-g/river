@@ -11,22 +11,33 @@
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
 # Set wallpaper
-wbg $HOME/Pictures/mountains.jpg &
+wbg $HOME/Pictures/wallpapers/ice_cape.jpg &
 
-mako &
+# Spawn Mako Notification Daemon
+riverctl spawn mako
 
 # Spawn Waybar
 riverctl spawn waybar
 
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
-riverctl map normal Super+Shift Return spawn foot
+riverctl map normal Super Return spawn foot
+
+# Spawn Yazi File Manager
+riverctl map normal Super E spawn "foot -D $HOME -e yazi"
 
 # Super I will launch Firefox Internet Browser
 riverctl map normal Super I spawn "MOZ_ENABLE_WAYLAND=1 firefox"
 riverctl map normal Super P spawn "MOZ_ENABLE_WAYLAND=1 firefox --private-window"
 
+# Super B will launch Brave Browser
+riverctl map normal Super B spawn "brave --enable-features=UseOzonePlatform --ozone-platform=wayland"
+
 # Super+Space to launch Wofi
 riverctl map normal Super Space spawn "wofi --show drun"
+
+# Take Screenshots
+riverctl map normal Super Print spawn "grim -o eDP-1 -t png $HOME/Pictures/Screenshots/$(date +'Screenshot-%Y-%m-%d-%H%M%S.png'); exec notify-send -t 4000 -i $HOME/.config/mako/cute/screenshot.png 'フルスクリーンショット' '$HOME/Pictures/Screenshots'"
+riverctl map normal Super+Shift Print spawn "--no-startup-id slurp | grim -t png -g - $HOME/Pictures/Screenshots/$(date +'Area-Screenshot-%Y-%m-%d-%H%M%S.png'); exec notify-send -t 4000 -i $HOME/.config/mako/cute/screenshot.png 'エリアキャプチャ' '$HOME/Pictures/Screenshots'"
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
@@ -55,7 +66,7 @@ riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
 # Super+Return to bump the focused view to the top of the layout stack
-riverctl map normal Super Return zoom
+riverctl map normal Super+Shift Return zoom
 
 # Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
 riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
@@ -183,4 +194,5 @@ rivertile -view-padding 6 -outer-padding 6 &
 # Remove GTK Decorations
 gsettings set org.gnome.desktop.wm.preferences button-layout "" &
 
+# Welcome Onii Chan
 notify-send -t 10000 -i $HOME/.config/mako/cute/welcome.png "ようこそ $USER-さん!" "おかえりなさい! $USER-さん!!!" &

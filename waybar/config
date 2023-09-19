@@ -1,24 +1,26 @@
 {
 	"layer": "top",
   "position": "bottom",
-  "margin-bottom": 10,
+  "margin-bottom": 12,
+  "margin-left": 12,
+  "margin-right": 12,
 
 	"modules-left": ["custom/launcher","cpu","memory","tray","network","backlight"],
 	"modules-center": ["river/tags"],
-	"modules-right": ["pulseaudio","clock","battery","custom/power"],
+	"modules-right": ["pulseaudio","clock", "clock#date","battery","custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
-		"format-muted": "{icon} {volume}%",
+		"format-muted": "󰝟 {volume}%",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
 			"default": ["", "", ""]
 		}
 	},
   "river/tags": {
-		"num-tags": 6
+		"num-tags": 9
   },
 	"network": {
 		// "tooltip": false,
@@ -38,22 +40,34 @@
 	},
   "battery": {
     "states": {
-      "good": 95,
-      "warning": 30,
-      "critical": 20
+      "full": 100,
+      "good" : 95,
+      "ninety" : 90,
+      "eighty" : 80,
+      "seventy" : 70,
+      "sixty" : 60,
+      "fifty" : 50,
+      "forty" : 40,
+      "thirty" : 30,
+      "warning": 20,
+      "critical": 10,
+      "urgent" : 5,
     },
-    "format": "{icon}  {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
 	"tray":{
 		"icon-size":20,
 		"spacing": 10
 	},
   "clock": {
-    "format": "{: %I:%M %p  %d/%m/%Y}"
+    "format": "{: %I:%M %p}"
+  },
+  "clock#date": {
+    "format": "{: %d/%m/%Y}"
   },
   "cpu": {
     "interval": 15,
@@ -71,7 +85,7 @@
     "on-click-right": "killall rofi"
   },
   "custom/power":{
-    "format": " ",
+    "format": "󰗼 ",
     "on-click": "bash ~/.config/wofi/leave/leave.sh",
   }
 }

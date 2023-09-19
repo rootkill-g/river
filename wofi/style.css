@@ -8,8 +8,8 @@
 }
 
 #text {
-	font-family: "Cousine Nerd Font Mono";
-	font-size: 16px;
+	font-family: "Cousine N Font Mono";
+	font-size: 14px;
   padding: 0 0 0 20px;
 }
 
@@ -23,8 +23,8 @@
 	border: 1px solid #ff4a57;
 	border-radius: 0px;
 	background-color: rgba(0, 0, 0, 0.9);
-  font-family: "Cousine Nerd Font Mono";
-	font-size: 16px;
+  font-family: "RobotoMono Nerd Font";
+	font-size: 14px;
 }
 
 #outer-box {
@@ -32,8 +32,8 @@
 }
 
 #scroll {
-  font-family: "Cousine Nerd Font Mono";
-	font-size: 16px;
+  font-family: "RobotoMono Nerd Font";
+	font-size: 14px;
 	color: #fefe33;
 }
 

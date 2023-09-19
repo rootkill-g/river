@@ -1,4 +1,4 @@
-set font "Cousine Nerd Font 12"
+set font "RobotoMono Nerd Font 14"
 set recolor
 set recolor-lightcolor "#000000"
 set recolor-darkcolor "#eeeeee"

@@ -14,7 +14,7 @@
 
 anchor=top-right
 layer=overlay
-font=Noto Sans Regular 12
+font=RobotoMono Nerd Font 12
 background-color=#000000dd
 text-color=#F38BA8
 width=500
@@ -22,7 +22,7 @@ height=400
 padding=10
 margin=20
 icons=1
-icon-path=~/.local/share/icons/WhiteSur-red/
+# icon-path=~/.local/share/icons/WhiteSur-red/
 max-icon-size=200
 border-size=1
 border-radius=0

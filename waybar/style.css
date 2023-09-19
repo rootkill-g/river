@@ -1,7 +1,7 @@
 * {
 	border: none;
-  font-family: "Cousine Nerd Font" ;
-	font-size: 15px;
+  font-family: "RobotoMono Nerd Font" ;
+	font-size: 12px;
 	min-height: 10px;
 }
 
@@ -14,15 +14,12 @@ window#waybar.hidden {
 }
 
 #window {
-	padding-left: 10px;
-	padding-right: 10px;
 	transition: none;
   color: transparent;
 	background: transparent;
 }
 #tags {
-	margin-left: 12px;
-	font-size: 4px;
+	font-size: 12px;
 	margin-bottom: 0px;
 	background: rgba(0, 0, 0, 0.8);
 	transition: none;
@@ -32,14 +29,14 @@ window#waybar.hidden {
 	transition: none;
 	color: #A6E3A1;
 	background: transparent;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 #tags button.occupied {
 	transition: none;
 	color: #F38BA8;
 	background: transparent;
-	font-size: 4px;
+	font-size: 12px;
 }
 
 #tags button.focused {
@@ -124,7 +121,7 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	transition: none;
 	color: #000000;
-	background: #94E2D5;
+	background: #89B4FA;
 }
 
 #calendar {
@@ -168,8 +165,7 @@ window#waybar.hidden {
 }
 
 #custom-launcher {
-	font-size: 24px;
-	margin-left: 8px;
+	font-size: 14px;
 	padding-left: 10px;
 	padding-right: 5px;
 	transition: none;
@@ -178,9 +174,8 @@ window#waybar.hidden {
 }
 
 #custom-power {
-	font-size: 20px;
+	font-size: 14px;
 	margin-left: 8px;
-	margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 5px;
 	margin-bottom: 0px;
