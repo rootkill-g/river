@@ -11,7 +11,7 @@
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
 # Set wallpaper
-wbg $HOME/Pictures/wallpapers/ice_cape.jpg &
+wbg $HOME/Pictures/climber.jpg &
 
 # Spawn Mako Notification Daemon
 riverctl spawn mako

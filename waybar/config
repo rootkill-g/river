@@ -25,7 +25,7 @@
 	"network": {
 		// "tooltip": false,
 		"format-wifi": "  {essid}",
-		"format-ethernet": " {ipaddr}",
+		"format-ethernet": "󰈀 {ipaddr}",
     "tooltip-format": " {ifname} via {gwaddr}",
     "format-linked": " {ifname} (No IP)",
     "format-disconnected": " Disconnected",
